@@ -1,6 +1,7 @@
 
 import { SocialLinkCard } from "@/components/SocialLinkCard";
 import { Github, Linkedin, FileText, User } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Index = () => {
   const socialLinks = [
@@ -44,15 +45,22 @@ const Index = () => {
         {/* Hero Section */}
         <div className="text-center mb-16 animate-in slide-in-from-top duration-1000">
           <div className="mb-6">
-            <div className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6 shadow-2xl">
-              <User className="w-16 h-16 text-white" />
-            </div>
+            <Avatar className="w-32 h-32 mx-auto mb-6 shadow-2xl">
+              <AvatarImage 
+                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=300&h=300&fit=crop&crop=face" 
+                alt="Moriel Mauni"
+                className="object-cover"
+              />
+              <AvatarFallback className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 text-white text-2xl font-bold">
+                MM
+              </AvatarFallback>
+            </Avatar>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-clip-text text-transparent mb-4">
             Moriel Mauni
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-2">
-            Software Developer
+            DevOps Engineer
           </p>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
             Welcome to my digital space. Connect with me through the links below.
