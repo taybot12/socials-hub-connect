@@ -1,4 +1,3 @@
-
 import { SocialLinkCard } from "@/components/SocialLinkCard";
 import { Github, Linkedin, FileText, User } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -47,7 +46,7 @@ const Index = () => {
           <div className="mb-6">
             <Avatar className="w-32 h-32 mx-auto mb-6 shadow-2xl">
               <AvatarImage 
-                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=300&h=300&fit=crop&crop=face" 
+                src="/lovable-uploads/c3694bc9-a6c1-4e1a-8376-476d8bd04e8f.png" 
                 alt="Moriel Mauni"
                 className="object-cover"
               />
